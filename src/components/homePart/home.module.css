@@ -1,0 +1,101 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bgColor);
+  padding: 0.5rem 0;
+  color: var(--color);
+}
+
+.heading .logo h2 {
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.heading .logo h2 img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.heading form {
+  position: relative;
+}
+
+.heading form input {
+  width: 30vw;
+  height: 6vh;
+  border-radius: 20px;
+  font-size: large;
+  padding: 0 0.5rem;
+}
+
+.heading form button {
+  height: 6vh;
+  font-size: x-large;
+  padding: 0 0.2rem;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.heading .iconBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading .iconBox a,
+.heading .iconBox div {
+  font-size: x-large;
+  margin: 0.4rem;
+}
+
+.home {
+  position: relative;
+  height: 50vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper {
+  height: 50vh;
+}
