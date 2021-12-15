@@ -42,23 +42,48 @@ const Home = () => {
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           navigation={true}
           className={styles.mySwiper}
         >
-          <SwiperSlide>
-            <img src="./images/product-9.jpg" alt="" />
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/home-img-1.jpg" alt="" />
+            </div>
+            <div className={styles.explain}>
+              <p>Up To 40% Off on Black Friday!</p>
+              <span>Smart Phone</span>
+              <a href="#">
+                <button>Shop Now!</button>
+              </a>
+            </div>
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/home-img-2.jpg" alt="" />
+            </div>
+            <div className={styles.explain}>
+              <p>Up To 30% Off on Black Friday!</p>
+              <span>Smart Watch</span>
+              <a href="#">
+                <button>Shop Now!</button>
+              </a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/home-img-3.jpg" alt="" />
+            </div>
+            <div className={styles.explain}>
+              <p>Up To 40% Off on Black Friday!</p>
+              <span>Smart Headset</span>
+              <a href="#">
+                <button>Shop Now!</button>
+              </a>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </section>
     </>

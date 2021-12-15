@@ -99,3 +99,52 @@
 .mySwiper {
   height: 50vh;
 }
+
+.mySwiper .imgBox {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10vw;
+}
+
+.mySwiper .imgBox img {
+  height: 90%;
+}
+
+.mySwiper .slideBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .slideBox .explain {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mySwiper .slideBox .explain a button {
+  font-size: x-large;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  background: var(--bgColor);
+  color: var(--color);
+  border: none;
+  cursor: pointer;
+}
+
+.mySwiper .slideBox .explain span {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.mySwiper .slideBox .explain p {
+  font-size: 1.3rem;
+  color: var(--spColor);
+  font-weight: 500;
+}

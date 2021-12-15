@@ -2,7 +2,8 @@
   --scrollBarColor: #222;
   --scrollBarTrack: #eee;
   --bgColor: #ffde59;
-  --color: white;
+  --color: #fff;
+  --spColor: brown;
 }
 
 * {
