@@ -8,9 +8,7 @@ import "@fortawesome/fontawesome-free/js/all.js";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Fragment>
-        <App />
-      </Fragment>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
