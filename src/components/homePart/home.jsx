@@ -8,6 +8,7 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 const Home = () => {
   SwiperCore.use([Pagination, Navigation]);
   return (
+    // header section
     <>
       <header className={styles.heading}>
         <div className={styles.logo}>
@@ -37,6 +38,8 @@ const Home = () => {
           </a>
         </div>
       </header>
+
+      {/* home slide section */}
       <section className={styles.home}>
         <Swiper
           slidesPerView={1}
@@ -85,6 +88,162 @@ const Home = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+      </section>
+
+      {/* banner section */}
+      <section className={styles.banner}>
+        <a href="#">
+          <div className={styles.bannerBox}>
+            <img src="./images/banner-1.jpg" alt="" />
+            <div className={styles.content}>
+              <span>Black Friday!</span>
+              <h3>Up To 40% Off</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div className={styles.bannerBox}>
+            <img src="./images/banner-2.jpg" alt="" />
+            <div className={styles.content}>
+              <span>Black Friday!</span>
+              <h3>Up To 30% Off</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div className={styles.bannerBox}>
+            <img src="./images/banner-3.jpg" alt="" />
+            <div className={styles.content}>
+              <span>Black Friday!</span>
+              <h3>Up To 40% Off</h3>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      {/* Arrivals section */}
+      <section className={styles.arrivals}>
+        <h1 className={styles.arrivalsHeading}>
+          New <span> Arrivals </span>
+        </h1>
+
+        <div className={styles.newArrivalsBoxContainer}>
+          <div className={styles.newArrivalsBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/arrival-1.jpg" alt="" />
+            </div>
+            <div className={styles.content}>
+              <h3>HD Television</h3>
+              <div className={styles.price}>
+                $249.99 <span>$399.99</span>
+              </div>
+              <div className={styles.stars}>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.newArrivalsBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/arrival-2.jpg" alt="" />
+            </div>
+            <div className={styles.content}>
+              <h3>HD Television</h3>
+              <div className={styles.price}>
+                $99.99 <span>$129.99</span>
+              </div>
+              <div className={styles.stars}>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.newArrivalsBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/arrival-3.jpg" alt="" />
+            </div>
+            <div className={styles.content}>
+              <h3>HD Television</h3>
+              <div className={styles.price}>
+                $149.99 <span>$199.99</span>
+              </div>
+              <div className={styles.stars}>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.newArrivalsBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/arrival-4.jpg" alt="" />
+            </div>
+            <div className={styles.content}>
+              <h3>HD Television</h3>
+              <div className={styles.price}>
+                $49.99 <span>$69.99</span>
+              </div>
+              <div className={styles.stars}>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.newArrivalsBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/arrival-5.jpg" alt="" />
+            </div>
+            <div className={styles.content}>
+              <h3>HD Television</h3>
+              <div className={styles.price}>
+                $39.99 <span>$49.99</span>
+              </div>
+              <div className={styles.stars}>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.newArrivalsBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/arrival-6.jpg" alt="" />
+            </div>
+            <div className={styles.content}>
+              <h3>HD Television</h3>
+              <div className={styles.price}>
+                $349.99 <span>$399.99</span>
+              </div>
+              <div className={styles.stars}>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

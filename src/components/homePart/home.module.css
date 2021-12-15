@@ -139,12 +139,93 @@
 
 .mySwiper .slideBox .explain span {
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: var(--fontWeightBold);
   margin-top: 1rem;
 }
 
 .mySwiper .slideBox .explain p {
   font-size: 1.3rem;
   color: var(--spColor);
-  font-weight: 500;
+  font-weight: var(--fontWeightLight);
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  gap: 1vw;
+  height: 25rem;
+}
+
+.banner a .bannerBox {
+  position: relative;
+}
+
+.banner a .bannerBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner a .bannerBox .content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 3;
+  transform: rotate(45deg);
+  color: var(--spColor);
+  font-size: large;
+  font-weight: var(--fontWeightBold);
+}
+
+.banner a .bannerBox .content span {
+  color: #222;
+  font-weight: var(--fontWeightLight);
+}
+
+.arrivals h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.arrivals .arrivalsHeading span {
+  color: var(--bgColor);
+}
+
+.arrivals .newArrivalsBoxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  gap: 1vw;
+  margin-top: 1rem;
+}
+
+.arrivals .newArrivalsBoxContainer .newArrivalsBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #eeee;
+  background: #eeee;
+}
+
+.arrivals .newArrivalsBoxContainer .newArrivalsBox .content {
+  margin-left: 1rem;
+}
+
+.arrivals .newArrivalsBoxContainer .newArrivalsBox .content .price {
+  color: var(--spColor);
+  font-weight: var(--fontWeightLight);
+  font-size: large;
+}
+
+.arrivals .newArrivalsBoxContainer .newArrivalsBox .content .price span {
+  text-decoration: line-through;
+  color: black;
+  font-size: small;
+}
+
+.arrivals .newArrivalsBoxContainer .newArrivalsBox .imgBox {
+  height: 35vh;
+}
+
+.arrivals .newArrivalsBoxContainer .newArrivalsBox .imgBox img {
+  height: 100%;
 }

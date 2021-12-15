@@ -4,6 +4,8 @@
   --bgColor: #ffde59;
   --color: #fff;
   --spColor: brown;
+  --fontWeightLight: 500;
+  --fontWeightBold: bolder;
 }
 
 * {
