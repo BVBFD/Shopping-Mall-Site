@@ -1,0 +1,46 @@
+.quickLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bgColor);
+}
+
+.quickLinks img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.quickLinks .links span {
+  color: var(--color);
+  font-weight: var(--fontWeightLight);
+  font-size: x-large;
+  margin: 0 1rem;
+}
+
+.quickLinks .share {
+  color: var(--color);
+  font-size: x-large;
+  height: 100%;
+}
+
+.quickLinks .share a {
+  color: var(--color);
+  font-size: xx-large;
+  margin: 0 0.6rem;
+}
+
+.credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #999;
+  padding: 0.3rem;
+}
+
+.credit p {
+  font-weight: var(--fontWeightLight);
+  font-size: medium;
+  color: var(--color);
+}

@@ -1,0 +1,87 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+}
+
+.about .image {
+  width: 37vw;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content {
+  padding: 3rem;
+  background: whitesmoke;
+}
+
+.about .content h3 {
+  text-transform: uppercase;
+  color: #333;
+}
+
+.about .content p {
+  color: #666;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.faq {
+  text-align: center;
+}
+
+.faq .heading {
+  font-size: var(--titleFontSize);
+  font-weight: var(--fontWeightBold);
+}
+
+.faq .heading span {
+  color: var(--bgColor);
+}
+
+.faq .accordionContainer {
+  width: 70vw;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px #111;
+}
+
+.faq .accordionContainer .accordion .accordionHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background: #555;
+  color: #fff;
+  padding: 1rem;
+}
+
+.faq .accordionContainer .accordion .accordionContent {
+  flex-direction: row;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+  animation: fadeIn 0.2s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.faq .accordionContainer .accordion.active .accordionHeading {
+  background: #0984e3;
+}
+
+.faq .accordionContainer .accordion.active .accordionContent {
+  display: flex;
+}

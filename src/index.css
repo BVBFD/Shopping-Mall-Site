@@ -6,6 +6,7 @@
   --spColor: brown;
   --fontWeightLight: 500;
   --fontWeightBold: bolder;
+  --titleFontSize: 3rem;
 }
 
 * {

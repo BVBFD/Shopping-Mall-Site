@@ -4,42 +4,11 @@ import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import "swiper/swiper.min.css";
 import SwiperCore, { Pagination, Navigation } from "swiper";
-import { Link, Route, Routes } from "react-router-dom";
 
 const Home = () => {
   SwiperCore.use([Pagination, Navigation]);
   return (
-    // header section
     <>
-      <header className={styles.heading}>
-        <Link to={"/"} className={styles.logo}>
-          <h2>
-            <img src="./images/Logo-big.png" />
-            Mr.Lee Mall
-          </h2>
-        </Link>
-        <form>
-          <input type="text" placeholder="Search..." />
-          <button>
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-        <div className={styles.iconBox}>
-          <div>
-            <i class="fas fa-bars"></i>
-          </div>
-          <a>
-            <i class="fas fa-user"></i>
-          </a>
-          <a>
-            <i class="fas fa-heart"></i>
-          </a>
-          <a>
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        </div>
-      </header>
-
       {/* home slide section */}
       <section className={styles.home}>
         <Swiper
@@ -245,58 +214,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className={styles.quickLinks}>
-        <Link to={"/"}>
-          <img className={styles.logo} src="./images/Logo-big.png" />
-        </Link>
-
-        <div className={styles.links}>
-          <Link to={"/"}>
-            <span>Home</span>
-          </Link>
-          <Link to={"/about"}>
-            <span>about</span>
-          </Link>
-          <Link to={"/products"}>
-            <span>products</span>
-          </Link>
-          <Link to={"/contact"}>
-            <span>contact</span>
-          </Link>
-          <Link to={"/login"}>
-            <span>login</span>
-          </Link>
-          <Link to={"/register"}>
-            <span>register</span>
-          </Link>
-          <Link to={"/cart"}>
-            <span>cart</span>
-          </Link>
-        </div>
-
-        <div className={styles.share}>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </section>
-
-      {/* footer section */}
-      <section className={styles.credit}>
-        <p>
-          Created by <span>Mr.Lee Seong Eun </span> || All Rights Reserved
-        </p>
-        <img src="./images/card_img.png" alt="" />
       </section>
     </>
   );
