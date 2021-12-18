@@ -29,6 +29,15 @@
   line-height: 2;
 }
 
+.about .content .btn {
+  background: var(--bgColor);
+  color: var(--color);
+  padding: 0.5rem;
+  font-weight: var(--fontWeightBold);
+  font-size: large;
+  border-radius: 5px;
+}
+
 .faq {
   text-align: center;
 }
@@ -69,6 +78,84 @@
   margin: auto;
   padding: 1rem;
   animation: fadeIn 0.2s linear;
+}
+
+.review {
+  text-align: center;
+}
+
+.review .heading {
+  font-size: var(--titleFontSize);
+  font-weight: var(--fontWeightBold);
+}
+
+.review .heading span {
+  color: var(--bgColor);
+}
+
+.review .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.review .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review .mySwiper {
+  height: 50vh;
+}
+
+.review .mySwiper .imgBox {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review .mySwiper .imgBox img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.review .mySwiper .imgBox h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.review .mySwiper .imgBox span {
+  color: #0984e3;
+  font-size: 1rem;
+}
+
+.review .mySwiper .imgBox p {
+  font-size: 1rem;
+  list-style: 1;
+  color: #666;
+  padding-top: 0.5rem;
 }
 
 @keyframes fadeIn {

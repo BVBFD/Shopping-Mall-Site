@@ -1,15 +1,24 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./about.module.css";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import "swiper/swiper.min.css";
+import SwiperCore, { Pagination, Navigation } from "swiper";
+
 const About = (props) => {
-  document.querySelectorAll(`.${styles.accordion}`).forEach((accordion) => {
-    accordion.onclick = () => {
-      accordion.classList.toggle(`${styles.active}`);
-    };
-  });
+  const openContent = (event) => {
+    if (event.target.tagName === "DIV") {
+      event.target.parentNode.classList.toggle(`${styles.active}`);
+    } else if (
+      event.target.tagName === "H3" ||
+      event.target.tagName === "svg" ||
+      event.target.tagName === "path"
+    ) {
+      event.target.parentNode.parentNode.classList.toggle(`${styles.active}`);
+    }
+  };
 
   return (
     <>
-      {/* about section */}
       <section className={styles.about}>
         <div className={styles.image}>
           <img src="./images/Logo-big.png" alt="" />
@@ -35,17 +44,16 @@ const About = (props) => {
         </div>
       </section>
 
-      {/* faq section */}
       <section className={styles.faq}>
         <h1 className={styles.heading}>
           Question & <span>Answers</span>
         </h1>
 
         <div className={styles.accordionContainer}>
-          <div className={styles.accordion}>
+          <div className={styles.accordion} onClick={openContent}>
             <div className={styles.accordionHeading}>
               <h3>How to make websites?</h3>
-              <i className="fas fa-angle-down"></i>
+              <i class="fas fa-angle-down"></i>
             </div>
             <p className={styles.accordionContent}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,10 +72,10 @@ const About = (props) => {
         </div>
 
         <div className={styles.accordionContainer}>
-          <div className={styles.accordion}>
+          <div className={styles.accordion} onClick={openContent}>
             <div className={styles.accordionHeading}>
               <h3>How to place order online?</h3>
-              <i className="fas fa-angle-down"></i>
+              <i class="fas fa-angle-down"></i>
             </div>
             <p className={styles.accordionContent}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,10 +94,10 @@ const About = (props) => {
         </div>
 
         <div className={styles.accordionContainer}>
-          <div className={styles.accordion}>
+          <div className={styles.accordion} onClick={openContent}>
             <div className={styles.accordionHeading}>
               <h3>How to pay online?</h3>
-              <i className="fas fa-angle-down"></i>
+              <i class="fas fa-angle-down"></i>
             </div>
             <p className={styles.accordionContent}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -108,10 +116,10 @@ const About = (props) => {
         </div>
 
         <div className={styles.accordionContainer}>
-          <div className={styles.accordion}>
+          <div className={styles.accordion} onClick={openContent}>
             <div className={styles.accordionHeading}>
               <h3>is online payment safe?</h3>
-              <i className="fas fa-angle-down"></i>
+              <i class="fas fa-angle-down"></i>
             </div>
             <p className={styles.accordionContent}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -130,10 +138,10 @@ const About = (props) => {
         </div>
 
         <div className={styles.accordionContainer}>
-          <div className={styles.accordion}>
+          <div className={styles.accordion} onClick={openContent}>
             <div className={styles.accordionHeading}>
               <h3>How to contact service center?</h3>
-              <i className="fas fa-angle-down"></i>
+              <i class="fas fa-angle-down"></i>
             </div>
             <p className={styles.accordionContent}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -152,7 +160,95 @@ const About = (props) => {
         </div>
       </section>
 
-      {/* review section */}
+      <section className={styles.review}>
+        <h1 className={styles.heading}>
+          Customer <span>review</span>
+        </h1>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={0}
+          loop={true}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          navigation={true}
+          className={styles.mySwiper}
+        >
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/pic-1.png" alt="" />
+              <h3>John Deo</h3>
+              <span>Designer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae
+                totam rem quidem eaque quis illum inventore suscipit rerum vel!
+                Minima corporis animi nemo quaerat incidunt accusantium iste
+                cupiditate temporibus.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/pic-2.png" alt="" />
+              <h3>John Deo</h3>
+              <span>Designer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae
+                totam rem quidem eaque quis illum inventore suscipit rerum vel!
+                Minima corporiss.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/pic-3.png" alt="" />
+              <h3>John Deo</h3>
+              <span>Designer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae
+                totam rem quidem eaqu
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/pic-4.png" alt="" />
+              <h3>John Deo</h3>
+              <span>Designer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae
+                totam rem quidem eaque quis illum inventore suscipit rerum vel!
+                Minima cor
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/pic-5.png" alt="" />
+              <h3>John Deo</h3>
+              <span>Designer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae
+                totam rem quidem eaque quis illum inventore suscipit rerum vel!
+                Minima corporis animi nemo quaerat incidunt accusantium iste
+                cupiditate temporibus.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slideBox}>
+            <div className={styles.imgBox}>
+              <img src="./images/pic-6.png" alt="" />
+              <h3>John Deo</h3>
+              <span>Designer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae
+                totam rem quidem eaque quis illum inventore suscipit rerum vel!
+                Minima corpori
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
     </>
   );
 };
