@@ -1,4 +1,4 @@
-section {
+.category {
   padding: 1rem 9%;
 }
 
@@ -37,6 +37,10 @@ section {
 .category .boxContainer .box img {
   height: 8rem;
   margin-bottom: 0.5rem;
+}
+
+.products {
+  padding: 1rem 9%;
 }
 
 .products .heading {
